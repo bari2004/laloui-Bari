@@ -1,0 +1,881 @@
+<html lang="en">
+<head>
+  <style>*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+#map {
+            height:90vw;
+            width:100%;
+            margin: auto;
+        }
+
+
+
+#navbar{
+    background: #f9f9f9;
+}
+#logo{
+    font-size: 36px;
+    font-weight: 550;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+#logo span{
+    color: #ffa500;
+}
+.navbar-toggler span{
+    color: #ffa500;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    background: #ffa500;
+    color: white;
+}
+#navbar form button{
+    background: orange;
+    color: white;
+    border: none;
+}
+
+.home{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(./images/background\ img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h5{
+    color: white;
+    font-size: 38px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+}
+.home .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+.changecontent::after{
+    content: ' ';
+    color: #ffa500;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+    0%{content: "France";}
+    10%{content: "Spain";}
+    20%{content: "United States";}
+    30%{content: "China";}
+    40%{content: "India";}
+    50%{content: "Pakistan";}
+    60%{content: "Italy";}
+    70%{content: "Turkey";}
+    80%{content: "Mexico";}
+    90%{content: "Germany";}
+    100%{content: "United kingdom";}
+} 
+.home .content p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.home .content a{
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.home .content a:hover{
+    background: #ffa500;
+    color: white;
+}
+@media (max-width:850px){
+    .home{
+        background-position: 50%;
+    }
+   
+}
+@media (max-width:450px){
+    .home .content h5{
+        font-size: 25px;
+    }
+    .home .content h1{
+        font-size: 38px;
+    }
+    .home .content p{
+        font-size: 13px;
+    }
+  
+}
+
+.book{
+    background: #f9f9f9;
+    padding: 50px;
+}
+.main-text h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+.main-text h1 span{
+    color: #ffa500;
+}
+.book .card{
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book .row{
+    margin-top: 30px;
+}
+.book form input{
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book form textarea{
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 200px;
+}
+.book .submit{
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background: #ffa500;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.book .submit:hover{
+    width: 170px;
+}
+@media (max-width:765px){
+    .book{
+        padding: 0;
+    }
+    .main-text h1{
+        padding: 20px;
+    }
+   
+}
+
+.main-txt h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+.main-txt h1 span{
+    color: #ffa500;
+}
+.packages .card{
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+.packages .card img{
+    border-radius: 5px;
+}
+.packages .card .card-body{
+    background: transparent;
+}
+.packages .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.packages .card .card-body p{
+    font-size: 15px;
+}
+.checked{
+    color: #ffa500;
+}
+.star i{
+    font-size: 15px;
+}
+.packages .card .card-body h6{
+    font-size: 20px;
+}
+.packages .card .card-body a{
+    padding: 10px;
+    text-decoration: none;
+    background: #ffa500;
+    color: white;
+    border-radius: 5px;
+}
+
+ul{
+  list-style: none;
+
+}
+ul li{
+  display: inline-block;
+  position: relative;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+}
+ul li a{
+  display: block;
+  padding: 20px 25px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 15px;
+  
+}
+ul li ul.g li {
+  display: block;
+  
+}
+ul li ul.g {
+  width: 100%;
+  position: absolute;
+  display: none;
+  background: #eab95f;
+  text-align: center;
+}
+ul li a:hover{
+  background: #ffa500;
+}
+ul li:hover ul.g {
+  display: block;
+}
+
+
+
+.services{
+    background: #f9f9f9;
+    margin-top: 50px;
+}
+.services .card{
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    border: none;
+    cursor: pointer;
+}
+.services .card i{
+    font-size: 80px;
+    text-align: center;
+    color: #ffa500;
+    margin-top: 20px;
+}
+.services .card .card-body h3{
+    font-weight: 600;
+}
+.services .card .card-body{
+    text-align: center;
+}
+
+.gallary{
+    margin-top: 50px;
+}
+.gallary .card{
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    cursor: pointer;
+}
+.gallary .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.gallary .card img:hover{
+    transform: scale(1.1);
+}
+
+.about{
+    padding: 50px;
+    margin-top: 50px;
+    background: #f9f9f9;
+}
+.about .card{
+    border-radius: 10px;
+}
+.about .card img{
+    border-radius: 10px;
+}
+.about h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.about p{
+    font-weight: 500;
+}
+#about-btn{
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: #ffa500;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#about-btn:hover{
+    width: 170px;
+}
+@media (max-width:765px){
+    .about{
+        padding: 0;
+    }
+}
+
+.card i:hover{
+	transform: scale(1.1);
+}
+.card card-body:hover{
+  transform: scale(1.1);
+}
+
+
+
+#footer{
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    background: #f9f9f9;
+}
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+}
+#footer h1 span{
+    color: #ffa500;
+}
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-links i:hover{
+    background: #ffa500;
+}
+#portfolio{
+	padding: 50px 0;
+}
+.work-list{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	grid-gap: 20px;
+	margin-top: 40px;
+}
+.work{
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+	display: block;
+}
+.work img{
+	width: 100%;
+	border-radius: 10px;
+	display: block;
+	transition: transform 0.5s;
+}
+.layer{
+	width: 100%;
+	height: 0%;
+	background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+	border-radius: 10px;
+	position:absolute;
+	left: 0;
+	bottom: 0;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content:center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	font-size: 14px;
+	transition: height 0.5S;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #FBA8A8;
+    font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+    font-style: oblique;
+}
+.work:hover img{
+	transform: scale(1.1);
+}
+.work:hover .layer{
+	height: 100%;
+}
+.btn{
+	display: block;
+	margin: 50px auto;
+	width: fit-content;
+	border: 1px solid #ff004f;
+	padding: 14px 50px;
+	border-radius: 6px;
+	text-decoration: none;
+	color: #fff;
+	transition: background 0.5s;
+}
+.btn:hover{
+	background: #ff004f;
+	
+}
+.contact-left{
+	flex-basis: 35%;
+}
+.contact-right{
+	flex-basis: 60%;
+}
+contact-left p{
+	margin-top: 30px;
+}
+.contact-left p i{
+	color:#ffa500;
+	margin-right: 15px;
+	font-size: 25px;
+}
+.social-icons a{
+	text-decoration: none;
+	font-size: 30px;
+	margin-right: 15px;
+	color:#ffa500;
+	display: inline-block;
+	transition: transform 0.5s
+}
+.social-icons a:hover{
+	color:#ffa500;
+	transform: translateY(-5px);
+}
+.btn.btn2{
+	display: inline-block;
+	background:#ffa500;
+}
+.contact-right form{
+	width: 100%;
+  
+}
+form input, form textarea{
+	width: 100%;
+	border: 0;
+	outline: none;
+
+	padding: 15px;
+	margin: 15px 0;
+	color: #000000;
+	font-size: 18px;
+	border-radius: 6px;
+}
+form .btn2{
+	padding: 14px 60px;
+	font-size: 18px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+nav .fas{
+	display: none;
+}
+@media only screen and (max-width: 575px){
+	.animated img{
+		display: none;
+	}
+	body{
+		font-size: 14px;
+	}
+	#header{
+		background-color: black;
+	}
+	.header-text{
+		margin-top: 100px;
+		font-size: 16px;
+	}
+	.header-text h1{
+	font-size: 30px;
+	}
+	.sub-title{
+		font-size: 40px;
+	}
+	.about-col-1, .about-col-2{
+		flex-basis: 100%;
+	}
+	.about-col-1{
+		margin-bottom: 30px;
+	}
+	.about-col-2{
+		font-size: 14px;
+	}
+	.tab-links{
+		font-size: 16px;
+		margin-right: 20px;
+	}
+}
+.d{
+  color: #160d10;
+}
+input{
+  background-color: #c7ad29cb;
+}
+textarea {
+  background-color: #c7ad29cb ;
+}
+</style>
+<style>
+  #clock {
+    font-size: em;
+    background-color: #f9f9f9;
+  }
+</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" href="pp.jpg">
+</head>
+<body>
+  
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="Help.html" id="logo"><span>T</span>ravel<span>&#9992;</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span><i class="fa-solid fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+               
+             
+              <li class="nav-item">
+                <a class="nav-link" href="Help.html">Help</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pag3.html">Personal I</a>
+              </li>
+              
+              <li class="nav-item">
+              <a class="nav-link" href="pag1.html"  >Back</a> 
+              </li>
+             
+            </ul>
+                
+            <div id="clock"></div>
+            <form class="d-flex">
+        
+              </form>
+            </form>
+          </div>
+        </div>
+      </nav>
+   <div class="main-txt">
+   
+          
+            <h1><span>New </span><h1>User guide</h1> <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            
+          
+      
+    </div>
+
+    <div style="text-align: center;">
+   <p>
+    "You have already logged into your account. Now you can perform the allowed tasks. Follow the introductory steps to work easily on the site."
+   </p>
+          
+      
+        <p>&nbsp;</p>
+</div>
+<section class="s2">
+  <div id="portfolio">
+    <div class="contain">
+  
+      <div class="work-list">
+        <div class="work">
+        <img src="./images/h6.png" width="331" height="248">
+          <div class="layer">
+            <h3>Step 1:</h3>
+            <p>To order a product, click on (+) (10) to specify the number of people, then click on "Purchase Offer" (11).</p>
+          </div>
+        </div>
+        <div class="work">
+          <img src="./images/h7.png" width="331" height="248">
+          <div class="layer">
+            <h3>Step 2:</h3>
+            <p>(12) To confirm or add a number, the price field + total price will appear. Click on "Purchase."</p>
+          </div>
+        </div>
+        <div class="work">
+          <img src="./images/h8.png" width="331" height="248">
+          <div class="layer">
+            <h3>Step 3:</h3>
+            <p>A message will appear confirming the purchase.</p>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+  
+</section>
+<section class="s2">
+  <div id="portfolio">
+    <div class="contain">
+    
+      <div class="work-list">
+        <div class="work">
+        <img src="./images/h9.png" width="331" height="248">
+          <div class="layer">
+            <h3>Step 1:</h3>
+            <p>Click on "Profile" to edit or view personal information. </p>
+          </div>
+        </div>
+        <div class="work">
+          <img src="./images/h10.png" width="331" height="248">
+          <div class="layer">
+            <h3>Step 2:</h3>
+            <p> To change the password or personal information, click on the "Edit" button, then enter the new information.</p>
+          </div>
+        </div>
+    
+      </div>
+    
+    </div>
+  </div>
+  <h1 style="text-align: center;">Adding or editing your personal information:</h1>
+
+  <h2 style="text-align: center;">"We thank you for your trust in our provided offers."
+    <p>&nbsp;</p>
+    <a href="Document1.pdf" download="Help">Download Help file</a>
+   </h2>
+   <div class="main-txt">
+    <h1><span style="text-align: center;"> To contact us:</span></h1>
+   </div>
+  
+    
+    </section>
+
+
+
+    <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+
+
+    <section class="s3" style="text-align: center;">
+      <div id="contact">
+        <div class="contain">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact:</h1>
+              <p ><i class="fas fa-paper-plane" ></i>bari.2004uae@gmail.com</p>
+              <p><i class="fas fa-phone-square-alt"></i>0556 75 31 82</p>
+              <div class="social-icons">
+                <a href="#Contact"><i class="fab fa-facebook"></i></a>
+                <a href="#Contact"><i class="fab fa-twitter-square"></i></a>
+                <a href="#Contact"><i class="fab fa-instagram"></i></a>
+                <a href="#Contact"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+      <div id="contact">
+        <div class="contain">
+          <div class="row">
+            <div class="contact-left">
+   
+            </div>
+            <div class="contact-right">
+              <form id="contactForm">
+                <input type="text" name="Name" placeholder="Your Name" required style="color: #ff0000;">
+                <input type="email" name="Email" placeholder="Your Email" required style="color: #ff0000;">
+                <textarea name="Message" rows="6" placeholder="Your Message" style="color: #ff0000;"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+              </form>
+              <div id="savedData"></div> 
+              <button id="deleteMessages" class="btn btn2"> Delete Messages</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+
+    
+    <script>
+  
+      function setCookie(name, value, days) {
+        var expires = "";
+        if (days) {
+          var date = new Date();
+          date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+          expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "") + expires + "; path=/";
+      }
+  
+   
+      function getCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == ' ') {
+            c = c.substring(1, c.length);
+          }
+          if (c.indexOf(nameEQ) == 0) {
+            return c.substring(nameEQ.length, c.length);
+          }
+        }
+        return null;
+      }
+  
+ 
+      function displaySavedData() {
+        var savedDataDiv = document.getElementById('savedData');
+        var existingData = savedDataDiv.innerHTML;
+  
+        var name = getCookie('Name');
+        var email = getCookie('Email');
+        var message = getCookie('Message');
+  
+        if (name && email && message) {
+          var newData = `
+            <div style="border: 1px solid #000; padding: 10px;   background-color: #c7ad29cb ;">
+              <h2>Name: ${name}</h2>
+              <h2>Email: ${email}</h2>
+              <h2>Message: ${message}</h2>
+            </div>
+          `;
+          savedDataDiv.innerHTML = existingData + newData;
+        }
+      }
+  
+  
+      document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        var formData = new FormData(this);
+        setCookie('Name', formData.get('Name'), 30); 
+        setCookie('Email', formData.get('Email'), 30); 
+        setCookie('Message', formData.get('Message'), 30); 
+        displaySavedData(); 
+        this.reset();
+      });
+  
+     
+      function deleteMessages() {
+        document.cookie = 'Name=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+        document.cookie = 'Email=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+        document.cookie = 'Message=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+        document.getElementById('savedData').innerHTML = ''; 
+      }
+  
+   
+      document.getElementById('deleteMessages').addEventListener('click', deleteMessages);
+
+      displaySavedData();
+    </script>
+
+    <footer id="footer">
+      <h1><span>T</span>ravel</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus fugiat, ipsa quos nulla qui alias.</p>
+      <div class="social-links">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-pinterest-p"></i>
+      </div>
+      <div class="credit">
+        <p>Call us: </p><h2>Laloui<span>Abdelbari</span></h2>
+        <p>GTR-L2-2023.2024-MT:222231649903</p>
+        <p>Algeria</p>
+            <p>Phone:0556 75 31 82</p>
+            <a href="mailto:bari.2004uae@gmail.com" class="footer-link">bari.2004uae@gmail.com</a>   
+             
+      </div>
+      <div class="copyright">
+        <p>&copy;Copyright SA Coding. All Rights Reserved</p>
+        <p>2024</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script>const options = {
+  bottom: '64px', // default: '32px'
+  right: 'unset', // default: '32px'
+  left: '32px',// default: 'unset'
+  time: '0.5s',// default: '0.3s'
+  mixColor: '#fff',// default: '#fff'
+  backgroundColor: '#fff',  // default: '#fff'
+  buttonColorDark: '#100f2c',  // default: '#100f2c'
+  buttonColorLight: '#fff',// default: '#fff'
+  saveInCookies: false , // default: true,
+  label: '🌓' ,// default: ''
+}
+const darkmode = new Darkmode(options);
+
+darkmode.showWidget();
+
+</script>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+      function updateClock() {
+        const now = new Date();
+        const hours = now.getHours().toString().padStart(2, '0');
+        const minutes = now.getMinutes().toString().padStart(2, '0');
+        const seconds = now.getSeconds().toString().padStart(2, '0');
+        const timeString = `${hours}:${minutes}:${seconds}`;
+        document.getElementById('clock').textContent = timeString;
+      }
+  
+
+      setInterval(updateClock, 1000);
+  
+
+      updateClock();
+    </script>
+   
+</body>
+</html>

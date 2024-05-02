@@ -1,0 +1,730 @@
+<html lang="en">
+<head>
+    <style>*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+        scroll-behavior: smooth;
+        font-family: 'Lato', sans-serif;
+    }
+    #map {
+                height:90vw;
+                width:100%;
+                margin: auto;
+            }
+    
+    
+ 
+    #navbar{
+        background: #f9f9f9;
+    }
+    #logo{
+        font-size: 36px;
+        font-weight: 550;
+        color: black;
+        text-shadow: 0px 1px 1px black;
+        margin-bottom: 5px;
+    }
+    #logo span{
+        color: #ffa500;
+    }
+    .navbar-toggler span{
+        color: #ffa500;
+    }
+    .navbar-nav{
+        margin-left: 20px;
+    }
+    .nav-item .nav-link{
+        font-size: 16px;
+        font-weight: 550;
+        color: black;
+        letter-spacing: 1px;
+        border-radius: 3px;
+        transition: 0.5s ease;
+    }
+    .nav-item .nav-link:hover{
+        background: #ffa500;
+        color: white;
+    }
+    #navbar form button{
+        background: orange;
+        color: white;
+        border: none;
+    }
+ 
+    .home{
+        width: 100%;
+        height: 90vh;
+        background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(./images/background\ img.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .home .content{
+        text-align: center;
+        padding-top: 200px;
+    }
+    .home .content h5{
+        color: white;
+        font-size: 38px;
+        font-weight: 550;
+        text-shadow: 0px 1px 1px black;
+    }
+    .home .content h1{
+        color: white;
+        font-size: 70px;
+        font-weight: 550;
+        text-shadow: 0px 1px 1px black;
+        margin-top: 5px;
+    }
+    .changecontent::after{
+        content: ' ';
+        color: #ffa500;
+        text-shadow: 0px 1px 1px black;
+        animation: changetext 10s infinite linear;
+    }
+    @keyframes changetext{
+        0%{content: "France";}
+        10%{content: "Spain";}
+        20%{content: "United States";}
+        30%{content: "China";}
+        40%{content: "India";}
+        50%{content: "Pakistan";}
+        60%{content: "Italy";}
+        70%{content: "Turkey";}
+        80%{content: "Mexico";}
+        90%{content: "Germany";}
+        100%{content: "United kingdom";}
+    } 
+    .home .content p{
+        color: white;
+        font-size: 15px;
+        font-weight: 600;
+        text-shadow: 0px 1px 1px black;
+        margin-bottom: 30px;
+        margin-top: 5px;
+    }
+    .home .content a{
+        padding: 10px;
+        background: white;
+        color: black;
+        letter-spacing: 2px;
+        font-weight: 550;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+    .home .content a:hover{
+        background: #ffa500;
+        color: white;
+    }
+    @media (max-width:850px){
+        .home{
+            background-position: 50%;
+        }
+       
+    }
+    @media (max-width:450px){
+        .home .content h5{
+            font-size: 25px;
+        }
+        .home .content h1{
+            font-size: 38px;
+        }
+        .home .content p{
+            font-size: 13px;
+        }
+      
+    }
+
+    .book{
+        background: #f9f9f9;
+        padding: 50px;
+    }
+    .main-text h1{
+        text-align: center;
+        text-shadow: 0px 1px 1px black;
+        font-weight: 600;
+    }
+    .main-text h1 span{
+        color: #ffa500;
+    }
+    .book .card{
+        border-radius: 10px;
+        box-shadow: 0px 5px 5px -6px black;
+    }
+    .book .row{
+        margin-top: 30px;
+    }
+    .book form input{
+        padding: 10px;
+        color: black;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        border-radius: 10px;
+        box-shadow: 0px 5px 5px -6px black;
+    }
+    .book form textarea{
+        border: none;
+        border-radius: 10px;
+        resize: none;
+        box-shadow: 0px 5px 5px -6px black;
+        height: 200px;
+    }
+    .book .submit{
+        width: 160px;
+        font-size: 16px;
+        font-weight: 550;
+        background: #ffa500;
+        color: white;
+        margin-top: 10px;
+        transition: 0.5s;
+    }
+    .book .submit:hover{
+        width: 170px;
+    }
+    @media (max-width:765px){
+        .book{
+            padding: 0;
+        }
+        .main-text h1{
+            padding: 20px;
+        }
+       
+    }
+  
+    .main-txt h1{
+        text-align: center;
+        margin-top: 30px;
+        font-weight: 600;
+        text-shadow: 0px 1px 1px black;
+    }
+    .main-txt h1 span{
+        color: #ffa500;
+    }
+    .packages .card{
+        border-radius: 5px;
+        border: none;
+        box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    }
+    .packages .card img{
+        border-radius: 5px;
+    }
+    .packages .card .card-body{
+        background: transparent;
+    }
+    .packages .card .card-body h3{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .packages .card .card-body p{
+        font-size: 15px;
+    }
+    .checked{
+        color: #ffa500;
+    }
+    .star i{
+        font-size: 15px;
+    }
+    .packages .card .card-body h6{
+        font-size: 20px;
+    }
+    .packages .card .card-body a{
+        padding: 10px;
+        text-decoration: none;
+        background: #ffa500;
+        color: white;
+        border-radius: 5px;
+    }
+ 
+    ul{
+      list-style: none;
+    
+    }
+    ul li{
+      display: inline-block;
+      position: relative;
+    }
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: monospace;
+    }
+    ul li a{
+      display: block;
+      padding: 20px 25px;
+      text-decoration: none;
+      text-align: center;
+      font-size: 15px;
+      
+    }
+    ul li ul.g li {
+      display: block;
+      
+    }
+    ul li ul.g {
+      width: 100%;
+      position: absolute;
+      display: none;
+      background: #eab95f;
+      text-align: center;
+    }
+    ul li a:hover{
+      background: #ffa500;
+    }
+    ul li:hover ul.g {
+      display: block;
+    }
+    
+    
+    
+    .services{
+        background: #f9f9f9;
+        margin-top: 50px;
+    }
+    .services .card{
+        box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+        border: none;
+        cursor: pointer;
+    }
+    .services .card i{
+        font-size: 80px;
+        text-align: center;
+        color: #ffa500;
+        margin-top: 20px;
+    }
+    .services .card .card-body h3{
+        font-weight: 600;
+    }
+    .services .card .card-body{
+        text-align: center;
+    }
+
+    .gallary{
+        margin-top: 50px;
+    }
+    .gallary .card{
+        border-radius: 10px;
+        box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+        cursor: pointer;
+    }
+    .gallary .card img{
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+    .gallary .card img:hover{
+        transform: scale(1.1);
+    }
+
+    .about{
+        padding: 50px;
+        margin-top: 50px;
+        background: #f9f9f9;
+    }
+    .about .card{
+        border-radius: 10px;
+    }
+    .about .card img{
+        border-radius: 10px;
+    }
+    .about h2{
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    .about p{
+        font-weight: 500;
+    }
+    #about-btn{
+        width: 150px;
+        height: 38px;
+        border: none;
+        border-radius: 5px;
+        background: #ffa500;
+        color: white;
+        letter-spacing: 2px;
+        font-weight: 550;
+        transition: 0.5s ease;
+        cursor: pointer;
+    }
+    #about-btn:hover{
+        width: 170px;
+    }
+    @media (max-width:765px){
+        .about{
+            padding: 0;
+        }
+    }
+ 
+    .card i:hover{
+        transform: scale(1.1);
+    }
+    .card card-body:hover{
+      transform: scale(1.1);
+    }
+    
+    
+
+    #footer{
+        width: 100%;
+        margin-top: 150px;
+        text-align: center;
+        background: #f9f9f9;
+    }
+    #footer h1{
+        font-weight: 600;
+        padding-top: 30px;
+        text-shadow: 0px 0px 1px black;
+    }
+    #footer h1 span{
+        color: #ffa500;
+    }
+    .social-links i{
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 20px;
+        background: black;
+        color: white;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        transition: 0.5s ease;
+        cursor: pointer;
+    }
+    .social-links i:hover{
+        background: #ffa500;
+    }
+   </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>America</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+     <link href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" href="pp.jpg">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="b.html" id="logo"><span>T</span>ravel<span>&#9992;</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span><i class="fa-solid fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="b.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="b.html#book" >Book</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Offers1.html">Offers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Help1.html">Help</a>
+              </li>
+            
+              <li class="nav-item">
+                <a class="nav-link" href="#gallary"><span style="color: #eab95f;">Tourist destinations</span></a>
+                <ul class="g">
+                  <li><a href="Africa1.html" style="color: antiquewhite;">Africa</a>
+                  <li><a href="Asia1.html" style="color: antiquewhite;">Asia</a>
+                  <li><a href="Europe1.html" style="color: antiquewhite;">Europe</a>
+                  <li><a href="America1.html" style="color: antiquewhite;">America</a>
+                </ul>
+              </li>
+              
+        
+             
+             
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Search">
+              <button class="btn btn-primary" type="button">Search</button>
+              <p>&nbsp;</p>
+              <li class="nav-item">
+            
+                <a class="btn btn-primary" href="uase.html" >Login</a>
+                
+                
+              </li>
+              </form>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <section class="packages" id="packages">
+      <div class="container">
+        <p>&nbsp;</p>
+        <p>&nbsp;</p><p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <div class="main-txt">
+            <h1><span>America </span>Trips&#9992;</h1>
+        </div>
+        <p>&nbsp;</p>
+       
+        <p>&nbsp;</p>
+        <div class="row" style="margin-top: 30px;">
+
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="./images/111.webp" alt="">
+              <div class="card-body">
+                <h3>New York City</h3>
+                <p> Experience the vibrant energy of New York City, where every corner holds a new adventure and cultural delight waiting to be discovered.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <strong style="color: #e80a0aa2;">Code:#poikjy</strong>  <p>&nbsp;</p>
+       
+                <h6 >Price befoer: <strong>$600</strong></h6>
+              
+                <a href="41.html">Book Now</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="./images/222.webp" alt="">
+              <div class="card-body">
+                <h3>Las Vegas</h3>
+                <p> Dive into the dazzling lights and endless entertainment of Las Vegas, where excitement never sleeps and unforgettable memories are made at every turn.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star  checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <strong style="color: #e80a0aa2;">Code:#uytfde</strong>  <p>&nbsp;</p>
+       
+                <h6 >Price befoer: <strong>$860</strong></h6>
+             
+                <a href="42.html">Book Now</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="./images/333.webp" alt="">
+              <div class="card-body">
+                <h3>California</h3>
+                <p>Explore the stunning coastline and iconic landmarks of California, from the majestic beauty of the Golden Gate Bridge to the sun-kissed beaches of Santa Monica.
+                </p>
+                </p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <strong style="color: #e80a0aa2;">Code:#09ikjh</strong> <p>&nbsp;</p>
+                <h6>Price befoer: <strong>$500</strong></h6>
+              
+                <a href="43.html">Book Now</a>
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+
+
+        <div class="row" style="margin-top: 30px;">
+
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="./images/444.webp" alt="">
+              <div class="card-body">
+                <h3>Napa Valley</h3>
+                <p>Indulge in the luxurious vineyards and picturesque landscapes of Napa Valley, where every sip of wine tells a story of passion and craftsmanship.
+                </p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <strong style="color: #e80a0aa2;">Code:#0oiuy5</strong> <p>&nbsp;</p>
+                
+                <h6 >Price after: <strong>$809</strong></h6>
+                <a href="44.html">Book Now</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="./images/555.webp" alt="">
+              <div class="card-body">
+                <h3>Hawaii</h3>
+                <p>Embark on a journey to the paradise of Hawaii, where pristine beaches, lush greenery, and the spirit of aloha await to enchant and rejuvenate your soul.
+                </p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <strong style="color: #e80a0aa2;">Code:#lijhtf</strong>
+                <p>&nbsp;</p>
+                <h6>Price after: <strong>$499</strong></h6>
+                <a href="45.html">Book Now</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="./images/us.png" alt="">
+              <div class="card-body">
+                <h3>United States</h3>
+                <p>The USA boasts diverse landscapes, from the skyscrapers of New York City to the natural wonders of the Grand Canyon. Experience the glitz and glamour of Hollywood, the cultural melting pot of San Francisco, and the Southern charm of New Orleans.
+                </p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star  checked"></i>
+                  <i class="fa-solid fa-star  checked"></i>
+                </div>
+                <strong style="color: #e80a0aa2;">Code:#nvgyuji</strong><p>&nbsp;</p>
+                <h6 >Price befoer: <strong>$1500</strong></h6>
+                
+                <a href="46.html">Book Now</a>
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+
+      </div>
+    </section>
+ 
+   <section class="packages" id="packages">
+    <div class="container">
+     
+      <div class="row" style="margin-top: 30px;">
+      </div>
+    </div>
+  </section>
+
+    <section class="gallary" id="gallary">
+      <div class="container">
+
+        <div class="main-txt">
+          <h1><span>G</span>allary</h1>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/g1.png" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/g2.png" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/g3.png" alt="" height="230px">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/g4.png" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/g5.png" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/g6.png" alt="" height="230px">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <footer id="footer">
+      <h1><span>T</span>ravel</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus fugiat, ipsa quos nulla qui alias.</p>
+      <div class="social-links">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-pinterest-p"></i>
+      </div>
+      <div class="credit">
+        <p>Call us: </p><h2>Laloui<span>Abdelbari</span></h2>
+        <p>GTR-L2-2023.2024-MT:222231649903</p>
+        <p>Algeria</p>
+            <p>Phone:0556 75 31 82</p>
+            <a href="mailto:bari.2004uae@gmail.com" class="footer-link">bari.2004uae@gmail.com</a>   
+             
+      </div>
+      <div class="copyright">
+        <p>&copy;Copyright SA Coding. All Rights Reserved</p>
+        <p>2024</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script>const options = {
+  bottom: '64px', // default: '32px'
+  right: 'unset', // default: '32px'
+  left: '32px',// default: 'unset'
+  time: '0.5s',// default: '0.3s'
+  mixColor: '#fff',// default: '#fff'
+  backgroundColor: '#fff',  // default: '#fff'
+  buttonColorDark: '#100f2c',  // default: '#100f2c'
+  buttonColorLight: '#fff',// default: '#fff'
+  saveInCookies: false , // default: true,
+  label: '🌓' ,// default: ''
+}
+const darkmode = new Darkmode(options);
+
+darkmode.showWidget();
+
+</script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

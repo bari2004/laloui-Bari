@@ -1,0 +1,876 @@
+<html lang="en">
+<head>
+    <style>*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+        scroll-behavior: smooth;
+        font-family: 'Lato', sans-serif;
+    }
+    #map {
+                height:90vw;
+                width:100%;
+                margin: auto;
+            }
+    
+    
+    /* Navbar Start */
+    #navbar{
+        background: #f9f9f9;
+    }
+    #logo{
+        font-size: 36px;
+        font-weight: 550;
+        color: black;
+        text-shadow: 0px 1px 1px black;
+        margin-bottom: 5px;
+    }
+    #logo span{
+        color: #ffa500;
+    }
+    .navbar-toggler span{
+        color: #ffa500;
+    }
+    .navbar-nav{
+        margin-left: 20px;
+    }
+    .nav-item .nav-link{
+        font-size: 16px;
+        font-weight: 550;
+        color: black;
+        letter-spacing: 1px;
+        border-radius: 3px;
+        transition: 0.5s ease;
+    }
+    .nav-item .nav-link:hover{
+        background: #ffa500;
+        color: white;
+    }
+    #navbar form button{
+        background: orange;
+        color: white;
+        border: none;
+    }
+    /* Navbar End */
+    
+    /* Home Section Start */
+    .home{
+        width: 100%;
+        height: 90vh;
+        background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(./images/background\ img.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .home .content{
+        text-align: center;
+        padding-top: 200px;
+    }
+    .home .content h5{
+        color: white;
+        font-size: 38px;
+        font-weight: 550;
+        text-shadow: 0px 1px 1px black;
+    }
+    .home .content h1{
+        color: white;
+        font-size: 70px;
+        font-weight: 550;
+        text-shadow: 0px 1px 1px black;
+        margin-top: 5px;
+    }
+    .changecontent::after{
+        content: ' ';
+        color: #ffa500;
+        text-shadow: 0px 1px 1px black;
+        animation: changetext 10s infinite linear;
+    }
+    @keyframes changetext{
+        0%{content: "France";}
+        10%{content: "Spain";}
+        20%{content: "United States";}
+        30%{content: "China";}
+        40%{content: "India";}
+        50%{content: "Pakistan";}
+        60%{content: "Italy";}
+        70%{content: "Turkey";}
+        80%{content: "Mexico";}
+        90%{content: "Germany";}
+        100%{content: "United kingdom";}
+    } 
+    .home .content p{
+        color: white;
+        font-size: 15px;
+        font-weight: 600;
+        text-shadow: 0px 1px 1px black;
+        margin-bottom: 30px;
+        margin-top: 5px;
+    }
+    .home .content a{
+        padding: 10px;
+        background: white;
+        color: black;
+        letter-spacing: 2px;
+        font-weight: 550;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+    .home .content a:hover{
+        background: #ffa500;
+        color: white;
+    }
+    @media (max-width:850px){
+        .home{
+            background-position: 50%;
+        }
+       
+    }
+    @media (max-width:450px){
+        .home .content h5{
+            font-size: 25px;
+        }
+        .home .content h1{
+            font-size: 38px;
+        }
+        .home .content p{
+            font-size: 13px;
+        }
+      
+    }
+    /* Home Section End */
+    
+    /* Section Book Start */
+    .book{
+        background: #f9f9f9;
+        padding: 50px;
+    }
+    .main-text h1{
+        text-align: center;
+        text-shadow: 0px 1px 1px black;
+        font-weight: 600;
+    }
+    .main-text h1 span{
+        color: #ffa500;
+    }
+    .book .card{
+        border-radius: 10px;
+        box-shadow: 0px 5px 5px -6px black;
+    }
+    .book .row{
+        margin-top: 30px;
+    }
+    .book form input{
+        padding: 10px;
+        color: black;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        border-radius: 10px;
+        box-shadow: 0px 5px 5px -6px black;
+    }
+    .book form textarea{
+        border: none;
+        border-radius: 10px;
+        resize: none;
+        box-shadow: 0px 5px 5px -6px black;
+        height: 200px;
+    }
+    .book .submit{
+        width: 160px;
+        font-size: 16px;
+        font-weight: 550;
+        background: #ffa500;
+        color: white;
+        margin-top: 10px;
+        transition: 0.5s;
+    }
+    .book .submit:hover{
+        width: 170px;
+    }
+    @media (max-width:765px){
+        .book{
+            padding: 0;
+        }
+        .main-text h1{
+            padding: 20px;
+        }
+       
+    }
+    /* Section Book End */
+    
+    
+    
+    
+    
+    /* Section Packages Start */
+    .main-txt h1{
+        text-align: center;
+        margin-top: 30px;
+        font-weight: 600;
+        text-shadow: 0px 1px 1px black;
+    }
+    .main-txt h1 span{
+        color: #ffa500;
+    }
+    .packages .card{
+        border-radius: 5px;
+        border: none;
+        box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    }
+    .packages .card img{
+        border-radius: 5px;
+    }
+    .packages .card .card-body{
+        background: transparent;
+    }
+    .packages .card .card-body h3{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .packages .card .card-body p{
+        font-size: 15px;
+    }
+    .checked{
+        color: #ffa500;
+    }
+    .star i{
+        font-size: 15px;
+    }
+    .packages .card .card-body h6{
+        font-size: 20px;
+    }
+    .packages .card .card-body a{
+        padding: 10px;
+        text-decoration: none;
+        background: #ffa500;
+        color: white;
+        border-radius: 5px;
+    }
+    /* Section Packages End */
+    ul{
+      list-style: none;
+    
+    }
+    ul li{
+      display: inline-block;
+      position: relative;
+    }
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: monospace;
+    }
+    ul li a{
+      display: block;
+      padding: 20px 25px;
+      text-decoration: none;
+      text-align: center;
+      font-size: 15px;
+      
+    }
+    ul li ul.g li {
+      display: block;
+      
+    }
+    ul li ul.g {
+      width: 100%;
+      position: absolute;
+      display: none;
+      background: #eab95f;
+      text-align: center;
+    }
+    ul li a:hover{
+      background: #ffa500;
+    }
+    ul li:hover ul.g {
+      display: block;
+    }
+    
+    
+    /* Section Services Start */
+    .services{
+        background: #f9f9f9;
+        margin-top: 50px;
+    }
+    .services .card{
+        box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+        border: none;
+        cursor: pointer;
+    }
+    .services .card i{
+        font-size: 80px;
+        text-align: center;
+        color: #ffa500;
+        margin-top: 20px;
+    }
+    .services .card .card-body h3{
+        font-weight: 600;
+    }
+    .services .card .card-body{
+        text-align: center;
+    }
+    /* Section Services End */
+    
+    
+    
+    
+    
+    /* Section Gallary Start */
+    .gallary{
+        margin-top: 50px;
+    }
+    .gallary .card{
+        border-radius: 10px;
+        box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+        cursor: pointer;
+    }
+    .gallary .card img{
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+    .gallary .card img:hover{
+        transform: scale(1.1);
+    }
+    /* Section Gallary End */
+    
+    
+    /* About Start */
+    .about{
+        padding: 50px;
+        margin-top: 50px;
+        background: #f9f9f9;
+    }
+    .about .card{
+        border-radius: 10px;
+    }
+    .about .card img{
+        border-radius: 10px;
+    }
+    .about h2{
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    .about p{
+        font-weight: 500;
+    }
+    #about-btn{
+        width: 150px;
+        height: 38px;
+        border: none;
+        border-radius: 5px;
+        background: #ffa500;
+        color: white;
+        letter-spacing: 2px;
+        font-weight: 550;
+        transition: 0.5s ease;
+        cursor: pointer;
+    }
+    #about-btn:hover{
+        width: 170px;
+    }
+    @media (max-width:765px){
+        .about{
+            padding: 0;
+        }
+    }
+    /* About End */
+    .card i:hover{
+        transform: scale(1.1);
+    }
+    .card card-body:hover{
+      transform: scale(1.1);
+    }
+    
+    
+    /* Footer Start */
+    #footer{
+        width: 100%;
+        margin-top: 150px;
+        text-align: center;
+        background: #f9f9f9;
+    }
+    #footer h1{
+        font-weight: 600;
+        padding-top: 30px;
+        text-shadow: 0px 0px 1px black;
+    }
+    #footer h1 span{
+        color: #ffa500;
+    }
+    .social-links i{
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 20px;
+        background: black;
+        color: white;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        transition: 0.5s ease;
+        cursor: pointer;
+    }
+    .social-links i:hover{
+        background: #ffa500;
+    }
+    /* Footer End */</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+
+
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap Link -->
+
+
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Font Awesome Cdn -->
+
+     <link href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+</head>
+<body>
+    
+
+
+
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="index.html" id="logo"><span>T</span>ravel<span>&#9992;</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span><i class="fa-solid fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#book" >Book</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Offers.html">Offers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Help.html">Help</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Personal information.html">Personal I</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallary"><span style="color: #eab95f;">Tourist destinations</span></a>
+                <ul class="g">
+                  <li><a href="Africa.html" style="color: antiquewhite;">Africa</a>
+                  <li><a href="Asia.html" style="color: antiquewhite;">Asia</a>
+                  <li><a href="Europe.html" style="color: antiquewhite;">Europe</a>
+                  <li><a href="America.html" style="color: antiquewhite;">America</a>
+                </ul>
+              </li>
+              
+        
+             
+             
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Search">
+              <button class="btn btn-primary" type="button">Search</button>
+              <p>&nbsp;</p>
+              <li class="nav-item">
+            
+                <a class="btn btn-primary" href="c.html" >Login</a>
+                
+                
+              </li>
+              </form>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- Navbar End -->
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+    <!-- Section Packages Start -->
+    <section class="packages" id="packages">
+      <div class="container">
+        <p>&nbsp;</p>
+        <p>&nbsp;</p><p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <div class="main-txt">
+          <h1><span>Africa </span>Trips&#9992;</h1>
+        </div>
+        <p>&nbsp;</p>
+       
+        <p>&nbsp;</p>
+        <div class="row" style="margin-top: 30px;">
+
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="./images/1.png" alt="">
+              <div class="card-body">
+                <h3>Kenya</h3>
+                <p>EEmbark on a journey through Kenya's iconic landscapes, where vast savannahs stretch to the horizon, adorned with acacia trees and bustling with diverse wildlife. Experience the thrill of witnessing the Great Migration in the Maasai Mara National Reserve, where millions of wildebeest and zebras traverse the plains in search of greener pastures. Encounter majestic lions, graceful giraffes, and towering elephants while on safari, and immerse yourself in the rich culture of the Maasai people.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <strong style="color: #e80a0aa2;">Code:#p9i8u7</strong>
+                <p>&nbsp;</p>
+                <h6>Price befoer: <strong>$600</strong></h6>
+               
+                <a href="18.html">Book Now</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="./images/2.png" alt="">
+              <div class="card-body">
+                <h3>South Africa</h3>
+                <p> Indulge in the diversity of South Africa, where cosmopolitan cities blend seamlessly with breathtaking natural beauty. Explore the vibrant streets of Cape Town, with its iconic Table Mountain backdrop, and embark on a scenic drive along the Garden Route, passing through picturesque coastal towns and lush forests. Discover the thrill of a Big Five safari in Kruger National Park, where encounters with lions, leopards, elephants, rhinos, and buffaloes await around every corner.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <strong style="color: #e80a0aa2;">Code:#lkjhgf</strong>        <p>&nbsp;</p>
+                <h6 >Price befoer: <strong>$860</strong></h6>
+               
+                <a href="19.html">Book Now</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="./images/3.png" alt="">
+              <div class="card-body">
+                <h3>Tanzania</h3>
+                <p>Experience the wonders of Tanzania, from the snow-capped peak of Mount Kilimanjaro to the sun-drenched beaches of Zanzibar. Witness the spectacle of the Great Migration in the Serengeti, where millions of wildebeest and zebras thunder across the plains in search of fresh grazing grounds. Dive into the crystal-clear waters of Lake Manyara, home to a dazzling array of birdlife and hippos, and explore the cultural riches of Stone Town, a UNESCO World Heritage Site.</p>
+                </p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <strong style="color: #e80a0aa2;">Code:#o98njh</strong><p>&nbsp;</p>
+                <h6>Price befoer: <strong>$500</strong></h6>
+               
+                <a href="20.html">Book Now</a>
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+
+
+        <div class="row" style="margin-top: 30px;">
+
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="./images/9.png" alt="">
+              <div class="card-body">
+                <h3>Ethiopia</h3>
+                <p>Delve into the ancient history and vibrant culture of Ethiopia, where medieval castles stand testament to a bygone era and rock-hewn churches amaze with their intricate architecture. Trek through the dramatic landscapes of the Simien Mountains, home to rare wildlife such as the Ethiopian wolf and the Gelada baboon, and witness the mesmerizing Blue Nile Falls thundering into the gorge below.</p>
+                </p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked  "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <strong style="color: #e80a0aa2;">Code:#8uy65r</strong>
+                <p>&nbsp;</p>
+                <h6>Price after: <strong>$809</strong></h6>
+                <a href="21.html">Book Now</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="./images/4.png" alt="">
+              <div class="card-body">
+                <h3>Egypt</h3>
+                <p>Unravel the mysteries of Egypt, where ancient wonders such as the pyramids of Giza and the temples of Luxor stand as testament to a glorious past. Cruise down the timeless Nile River aboard a traditional felucca, passing by fertile riverbanks dotted with temples and villages frozen in time. Explore the vibrant chaos of Cairo's bazaars and immerse yourself in the tranquil beauty of the Red Sea coast, where colorful coral reefs teem with life beneath the waves.</p>
+                </p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <strong style="color: #e80a0aa2;">Code:#iugfre</strong><p>&nbsp;</p>
+                <h6>Price befoer: <strong>$600</strong></h6>
+             
+                <a href="22.html">Book Now</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="./images/5.png" alt="">
+              <div class="card-body">
+                <h3>Morocco</h3>
+                <p>Embark on a sensory journey through Morocco, where labyrinthine medinas, fragrant spice markets, and ornate palaces await around every corner. Lose yourself in the bustling souks of Marrakech, where snake charmers, storytellers, and acrobats entertain amidst a riot of colors and scents. Journey into the Sahara Desert on a camel trek, spending nights under the stars in a traditional Berber camp, and discover the timeless beauty of ancient cities such as Fes and Meknes.
+                </p>
+                </p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <strong style="color: #e80a0aa2;">Code:#9izase</strong><p>&nbsp;</p>
+                <h6 >Price befoer: <strong>$600</strong></h6>
+               
+                <a href="23.html">Book Now</a>
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+
+      </div>
+    </section>
+    <!-- Section Packages End -->
+
+
+
+   <!-- Section Packages Start -->
+   <section class="packages" id="packages">
+    <div class="container">
+     
+      <div class="row" style="margin-top: 30px;">
+
+        <div class="col-md-4 py-3 py-md-0">
+
+          <div class="card">
+            <img src="./images/6.png" alt="">
+            <div class="card-body">
+              <h3>Rwanda</h3>
+              <p> Embark on an unforgettable journey to Rwanda, known as the "Land of a Thousand Hills," where lush greenery blankets rolling landscapes and vibrant culture thrives amidst breathtaking natural beauty. Trek through dense rainforests in Volcanoes National Park to encounter endangered mountain gorillas in their natural habitat, an experience that promises to be both humbling and awe-inspiring. Explore the serene shores of Lake Kivu, where sparkling waters invite relaxation and adventure alike, from kayaking to lakeside hikes. Delve into Rwanda's tragic history at the Kigali Genocide Memorial, a poignant tribute to the resilience and hope of the Rwandan people. With its blend of stunning scenery, rich biodiversity, and compelling history, Rwanda offers a truly immersive and rewarding travel experience.</p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star "></i>
+              </div>
+              <strong style="color: #e80a0aa2;">Code:#9876tf</strong><p>&nbsp;</p>
+              <h6 >Price befoer: <strong>$800</strong></h6>
+            
+              <a href="24.html">Book Now</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+
+          <div class="card">
+            <img src="./images/7.png" alt="">
+            <div class="card-body">
+              <h3>Seychelles</h3>
+              <p>Escape to paradise in the Seychelles, where powder-white beaches, turquoise waters, and lush tropical forests await. Snorkel among colorful coral reefs teeming with marine life, spot giant tortoises on the pristine island of Aldabra, and hike through the misty jungles of Mahe in search of rare endemic species. Indulge in the laid-back island lifestyle, where time seems to slow down to the rhythm of the waves.
+            </p>
+              </p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star "></i>
+              </div>
+              <strong style="color: #e80a0aa2;">Code:#0oijy6</strong><p>&nbsp;</p>
+              <h6>Price befoer: <strong>$1000</strong></h6>
+              <a href="25.html">Book Now</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+
+          <div class="card">
+            <img src="./images/8.png" alt="">
+            <div class="card-body">
+              <h3>Namibia</h3>
+              <p>Discover the surreal landscapes of Namibia, where towering sand dunes, rugged canyons, and vast salt pans stretch as far as the eye can see. Climb to the top of Dune 45 for a breathtaking sunrise over the Namib Desert, marvel at the otherworldly rock formations of Spitzkoppe, and witness the eerie beauty of the Skeleton Coast, where shipwrecks lie scattered along windswept beaches.  </p>
+              </p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star "></i>
+              </div>
+              <strong style="color: #e80a0aa2;">Code:#pokjyt</strong>
+              <p>&nbsp;</p>
+              <h6>Price after: <strong>$599</strong></h6>
+              <a href="26.html">Book Now</a>
+            </div>
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+
+
+
+    </div>
+  </section>
+  <!-- Section Packages End -->
+
+
+
+
+
+   
+
+
+
+    <!-- Section Gallary Start -->
+    <section class="gallary" id="gallary">
+      <div class="container">
+
+        <div class="main-txt">
+          <h1><span>G</span>allary</h1>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/g1.png" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/g2.png" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/g3.png" alt="" height="230px">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/g4.png" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/g5.png" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/g6.png" alt="" height="230px">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- Section Gallary End -->
+
+    <!-- Footer Start -->
+    <footer id="footer">
+      <h1><span>T</span>ravel</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus fugiat, ipsa quos nulla qui alias.</p>
+      <div class="social-links">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-pinterest-p"></i>
+      </div>
+      <div class="credit">
+        <p>Call us: </p><h2>Laloui<span>Abdelbari</span></h2>
+        <p>GTR-L2-2023.2024-MT:222231649903</p>
+        <p>Algeria</p>
+            <p>Phone:0556 75 31 82</p>
+            <a href="mailto:bari.2004uae@gmail.com" class="footer-link">bari.2004uae@gmail.com</a>   
+             
+      </div>
+      <div class="copyright">
+        <p>&copy;Copyright SA Coding. All Rights Reserved</p>
+        <p>2024</p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+
+
+
+
+
+
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>
