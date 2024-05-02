@@ -1,0 +1,840 @@
+<html lang="en">
+<head>
+  <style>*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+#map {
+            height:90vw;
+            width:100%;
+            margin: auto;
+        }
+
+
+/* Navbar Start */
+#navbar{
+    background: #f9f9f9;
+}
+#logo{
+    font-size: 36px;
+    font-weight: 550;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+#logo span{
+    color: #ffa500;
+}
+.navbar-toggler span{
+    color: #ffa500;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    background: #ffa500;
+    color: white;
+}
+#navbar form button{
+    background: orange;
+    color: white;
+    border: none;
+}
+/* Navbar End */
+
+/* Home Section Start */
+.home{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(./images/background\ img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h5{
+    color: white;
+    font-size: 38px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+}
+.home .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+.changecontent::after{
+    content: ' ';
+    color: #ffa500;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+    0%{content: "France";}
+    10%{content: "Spain";}
+    20%{content: "United States";}
+    30%{content: "China";}
+    40%{content: "India";}
+    50%{content: "Pakistan";}
+    60%{content: "Italy";}
+    70%{content: "Turkey";}
+    80%{content: "Mexico";}
+    90%{content: "Germany";}
+    100%{content: "United kingdom";}
+} 
+.home .content p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.home .content a{
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.home .content a:hover{
+    background: #ffa500;
+    color: white;
+}
+@media (max-width:850px){
+    .home{
+        background-position: 50%;
+    }
+   
+}
+@media (max-width:450px){
+    .home .content h5{
+        font-size: 25px;
+    }
+    .home .content h1{
+        font-size: 38px;
+    }
+    .home .content p{
+        font-size: 13px;
+    }
+  
+}
+/* Home Section End */
+
+/* Section Book Start */
+.book{
+    background: #f9f9f9;
+    padding: 50px;
+}
+.main-text h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+.main-text h1 span{
+    color: #ffa500;
+}
+.book .card{
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book .row{
+    margin-top: 30px;
+}
+.book form input{
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book form textarea{
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 200px;
+}
+.book .submit{
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background: #ffa500;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.book .submit:hover{
+    width: 170px;
+}
+@media (max-width:765px){
+    .book{
+        padding: 0;
+    }
+    .main-text h1{
+        padding: 20px;
+    }
+   
+}
+/* Section Book End */
+
+
+
+
+
+/* Section Packages Start */
+.main-txt h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+.main-txt h1 span{
+    color: #ffa500;
+}
+.packages .card{
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+.packages .card img{
+    border-radius: 5px;
+}
+.packages .card .card-body{
+    background: transparent;
+}
+.packages .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.packages .card .card-body p{
+    font-size: 15px;
+}
+.checked{
+    color: #ffa500;
+}
+.star i{
+    font-size: 15px;
+}
+.packages .card .card-body h6{
+    font-size: 20px;
+}
+.packages .card .card-body a{
+    padding: 10px;
+    text-decoration: none;
+    background: #ffa500;
+    color: white;
+    border-radius: 5px;
+}
+/* Section Packages End */
+ul{
+  list-style: none;
+
+}
+ul li{
+  display: inline-block;
+  position: relative;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+}
+ul li a{
+  display: block;
+  padding: 20px 25px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 15px;
+  
+}
+ul li ul.g li {
+  display: block;
+  
+}
+ul li ul.g {
+  width: 100%;
+  position: absolute;
+  display: none;
+  background: #eab95f;
+  text-align: center;
+}
+ul li a:hover{
+  background: #ffa500;
+}
+ul li:hover ul.g {
+  display: block;
+}
+
+
+/* Section Services Start */
+.services{
+    background: #f9f9f9;
+    margin-top: 50px;
+}
+.services .card{
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    border: none;
+    cursor: pointer;
+}
+.services .card i{
+    font-size: 80px;
+    text-align: center;
+    color: #ffa500;
+    margin-top: 20px;
+}
+.services .card .card-body h3{
+    font-weight: 600;
+}
+.services .card .card-body{
+    text-align: center;
+}
+/* Section Services End */
+
+
+
+
+
+/* Section Gallary Start */
+.gallary{
+    margin-top: 50px;
+}
+.gallary .card{
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    cursor: pointer;
+}
+.gallary .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.gallary .card img:hover{
+    transform: scale(1.1);
+}
+/* Section Gallary End */
+
+
+/* About Start */
+.about{
+    padding: 50px;
+    margin-top: 50px;
+    background: #f9f9f9;
+}
+.about .card{
+    border-radius: 10px;
+}
+.about .card img{
+    border-radius: 10px;
+}
+.about h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.about p{
+    font-weight: 500;
+}
+#about-btn{
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: #ffa500;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#about-btn:hover{
+    width: 170px;
+}
+@media (max-width:765px){
+    .about{
+        padding: 0;
+    }
+}
+/* About End */
+.card i:hover{
+	transform: scale(1.1);
+}
+.card card-body:hover{
+  transform: scale(1.1);
+}
+
+
+/* Footer Start */
+#footer{
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    background: #f9f9f9;
+}
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+}
+#footer h1 span{
+    color: #ffa500;
+}
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-links i:hover{
+    background: #ffa500;
+}
+/* Footer End */</style>
+  <style>
+.btn{
+	display: block;
+	margin: 50px auto;
+	width: fit-content;
+	border: 1px solid #ff004f;
+	padding: 14px 50px;
+	border-radius: 6px;
+	text-decoration: none;
+	color: #fff;
+	transition: background 0.5s;
+}
+.btn:hover{
+	background: #ff004f;
+	
+}
+.contact-left{
+	flex-basis: 35%;
+}
+.contact-right{
+	flex-basis: 60%;
+}
+contact-left p{
+	margin-top: 30px;
+}
+.contact-left p i{
+	color:#ffa500;
+	margin-right: 15px;
+	font-size: 25px;
+}
+.social-icons a{
+	text-decoration: none;
+	font-size: 30px;
+	margin-right: 15px;
+	color:#ffa500;
+	display: inline-block;
+	transition: transform 0.5s
+}
+.social-icons a:hover{
+	color:#ffa500;
+	transform: translateY(-5px);
+}
+.btn.btn2{
+	display: inline-block;
+	background:#ffa500;
+}
+.contact-right form{
+	width: 100%;
+  
+}
+form input, form textarea{
+	width: 100%;
+	border: 0;
+	outline: none;
+
+	padding: 15px;
+	margin: 15px 0;
+	color: #000000;
+	font-size: 18px;
+	border-radius: 6px;
+}
+form .btn2{
+	padding: 14px 60px;
+	font-size: 18px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+nav .fas{
+	display: none;
+}
+.d{
+  color: #160d10;
+}
+input{
+  background-color: #c7ad29cb;
+}
+textarea {
+  background-color: #c7ad29cb ;
+}
+/* Footer End */</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+
+
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap Link -->
+    <link rel="icon" href="pp.jpg">
+
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Font Awesome Cdn -->
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+</head>
+<body>
+    
+
+
+
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="b.html" id="logo"><span>T</span>ravel<span>&#9992;</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span><i class="fa-solid fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="b.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="b.html#book" id="Book">Book</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Offers1.html">Offers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Help1.html">Help</a>
+              </li>
+       
+              
+        
+             
+             
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Search">
+              <button class="btn btn-primary" type="button">Search</button>
+              <p>&nbsp;</p>
+              <li class="nav-item">
+            
+                <a class="btn btn-primary" href="uase.html" >Login</a>
+                
+                
+              </li>
+              </form>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- Navbar End -->
+
+
+
+
+
+    <div class="main-txt">
+   
+          
+            <h1><span>Germany </span><h1></h1> <p>&nbsp;</p>
+ 
+            
+          
+      
+    </div>
+
+
+
+
+    <!-- Section Gallary Start -->
+    <section class="gallary" id="gallary">
+        <div class="container">
+  
+          
+  
+          <div class="row" style="margin-top: 30px;">
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <img src="./images/4444.jpg" alt="" height="230px">
+              </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <img src="./images/ge1.jpg" alt="" height="230px">
+              </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <img src="./images/ge2.jpg" alt="" height="230px">
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </section>
+      <!-- Section Gallary End -->
+  
+
+
+      <div class="main-txt">
+   
+      <h1>Price includes all activities. One-month trip duration</h1>
+      <h1>For one person</h1>
+      <h1> <span>Book now</span></h1>
+    
+      </div>
+      <div style="text-align: center;">
+      <button id="about-btn" onclick="redirectToOtherPage()" >Book now...</button>
+      </div>
+
+      <p>&nbsp;</p>  <p>&nbsp;</p>             <p>Experience the perfect blend of tradition and modernity in Germany, where you can immerse yourself in bustling cities and scenic countryside.</p>
+    </p>
+   
+    <div class="star">
+      <i class="fa-solid fa-star checked"></i>
+      <i class="fa-solid fa-star checked"></i>
+      <i class="fa-solid fa-star checked"></i>
+      <i class="fa-solid fa-star checked"></i>
+      <i class="fa-solid fa-star checked"></i>
+    </div>
+   <h2> <strong style="color: #e80a0aa2;">Code:#0okutf</strong></h2> <p>&nbsp;</p>
+    <h2 >Price befoer: <strong>$1000</strong></h2>
+<p>&nbsp;</p>  <p>&nbsp;</p>  <p>&nbsp;</p>
+
+      <h3>1) Enjoy a month in Germany its countryside.</h3>
+       <h3> 2) You can hike through all villages while enjoying various activities.</h3>
+       <h3> 3) Each day, carefully scheduled activities by our experts.</h3>
+      <h3>  4) Enjoy the country's delicious cuisine included in the fees.</h3>
+    <!-- Footer Start -->
+
+    <p>&nbsp;</p> 
+    <p>&nbsp;</p> 
+
+    <div class="main-txt">
+   
+   
+
+        <h1> <span>Add a</span> Comment</h1>
+      
+        </div>
+
+
+
+ 
+
+        <section class="s3" style="text-align: center;">
+            <div id="contact">
+              <div class="contain">
+                <div class="row">
+                  <div class="contact-left">
+                    <h1 class="sub-title">Contact:</h1>
+                    <p ><i class="fas fa-paper-plane" ></i>bari.2004uae@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>0556 75 31 82</p>
+                    <div class="social-icons">
+                      <a href="#Contact"><i class="fab fa-facebook"></i></a>
+                      <a href="#Contact"><i class="fab fa-twitter-square"></i></a>
+                      <a href="#Contact"><i class="fab fa-instagram"></i></a>
+                      <a href="#Contact"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                  </div>
+            <div id="contact">
+              <div class="contain">
+                <div class="row">
+                  <div class="contact-left">
+                    <!-- Your contact info -->
+                  </div>
+                  <div class="contact-right">
+                    <form id="contactForm">
+                      <input type="text" name="Name" placeholder="Your Name" required style="color: #ff0000;">
+                      <input type="email" name="Email" placeholder="Your Email" required style="color: #ff0000;">
+                      <textarea name="Message" rows="6" placeholder="Your Message" style="color: #ff0000;"></textarea>
+                      <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <div id="savedData"></div> <!-- Display saved data here -->
+                    <button id="deleteMessages" class="btn btn2"> Delete Messages</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>  
+        
+
+
+
+
+
+
+    <footer id="footer">
+      <h1><span>T</span>ravel</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus fugiat, ipsa quos nulla qui alias.</p>
+      <div class="social-links">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-pinterest-p"></i>
+      </div>
+      <div class="credit">
+        <p>Call us: </p><h2>Laloui<span>Abdelbari</span></h2>
+        <p>GTR-L2-2023.2024-MT:222231649903</p>
+        <p>Algeria</p>
+            <p>Phone:0556 75 31 82</p>
+            <a href="mailto:bari.2004uae@gmail.com" class="footer-link">bari.2004uae@gmail.com</a>   
+             
+      </div>
+      <div class="copyright">
+        <p>&copy;Copyright SA Coding. All Rights Reserved</p>
+        <p>2024</p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>const options = {
+      bottom: '64px', // default: '32px'
+      right: 'unset', // default: '32px'
+      left: '32px',// default: 'unset'
+      time: '0.5s',// default: '0.3s'
+      mixColor: '#fff',// default: '#fff'
+      backgroundColor: '#fff',  // default: '#fff'
+      buttonColorDark: '#100f2c',  // default: '#100f2c'
+      buttonColorLight: '#fff',// default: '#fff'
+      saveInCookies: false , // default: true,
+      label: '🌓' ,// default: ''
+    }
+    const darkmode = new Darkmode(options);
+    
+    darkmode.showWidget();
+    
+    </script>
+        
+    
+    <script>
+        // Function to set cookie
+        function setCookie(name, value, days) {
+          var expires = "";
+          if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toUTCString();
+          }
+          document.cookie = name + "=" + (value || "") + expires + "; path=/";
+        }
+    
+        // Function to get cookie
+        function getCookie(name) {
+          var nameEQ = name + "=";
+          var ca = document.cookie.split(';');
+          for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+              c = c.substring(1, c.length);
+            }
+            if (c.indexOf(nameEQ) == 0) {
+              return c.substring(nameEQ.length, c.length);
+            }
+          }
+          return null;
+        }
+    
+        // Function to display saved data
+        function displaySavedData() {
+          var savedDataDiv = document.getElementById('savedData');
+          var existingData = savedDataDiv.innerHTML;
+    
+          var name = getCookie('Name');
+          var email = getCookie('Email');
+          var message = getCookie('Message');
+    
+          if (name && email && message) {
+            var newData = `
+              <div style="border: 1px solid #000; padding: 10px;   background-color: #c7ad29cb ;">
+                <h2>Name: ${name}</h2>
+                <h2>Email: ${email}</h2>
+                <h2>Message: ${message}</h2>
+              </div>
+            `;
+            savedDataDiv.innerHTML = existingData + newData;
+          }
+        }
+    
+        // Event listener for form submission
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+          event.preventDefault();
+          var formData = new FormData(this);
+          setCookie('Name', formData.get('Name'), 30); // Save name in cookie for 30 days
+          setCookie('Email', formData.get('Email'), 30); // Save email in cookie for 30 days
+          setCookie('Message', formData.get('Message'), 30); // Save message in cookie for 30 days
+          displaySavedData(); // Update displayed saved data
+          this.reset(); // Reset form after submission
+        });
+    
+        // Function to delete messages
+        function deleteMessages() {
+          document.cookie = 'Name=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+          document.cookie = 'Email=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+          document.cookie = 'Message=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+          document.getElementById('savedData').innerHTML = ''; // Clear displayed messages
+        }
+    
+        // Event listener for delete messages button
+        document.getElementById('deleteMessages').addEventListener('click', deleteMessages);
+    
+        // Initial display of saved data
+        displaySavedData();
+      </script>
+  
+
+  <script>
+    function redirectToOtherPage(){
+      window.location.href ='b.html#book';
+    }
+
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>
