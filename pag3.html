@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+#map {
+            height:90vw;
+            width:100%;
+            margin: auto;
+        }
+
+
+
+#navbar{
+    background: #f9f9f9;
+}
+#logo{
+    font-size: 36px;
+    font-weight: 550;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+#logo span{
+    color: #ffa500;
+}
+.navbar-toggler span{
+    color: #ffa500;
+}
+.error-message {
+        display: none;
+        color: red;
+    }
+    .error-message2 {
+        display: none;
+        color: red;
+    }
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    background: #ffa500;
+    color: white;
+}
+#navbar form button{
+    background: orange;
+    color: white;
+    border: none;
+}
+
+.home{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(./images/background\ img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h5{
+    color: white;
+    font-size: 38px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+}
+.home .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+.changecontent::after{
+    content: ' ';
+    color: #ffa500;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+    0%{content: "France";}
+    10%{content: "Spain";}
+    20%{content: "United States";}
+    30%{content: "China";}
+    40%{content: "India";}
+    50%{content: "Pakistan";}
+    60%{content: "Italy";}
+    70%{content: "Turkey";}
+    80%{content: "Mexico";}
+    90%{content: "Germany";}
+    100%{content: "United kingdom";}
+} 
+.home .content p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.home .content a{
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.home .content a:hover{
+    background: #ffa500;
+    color: white;
+}
+@media (max-width:850px){
+    .home{
+        background-position: 50%;
+    }
+   
+}
+@media (max-width:450px){
+    .home .content h5{
+        font-size: 25px;
+    }
+    .home .content h1{
+        font-size: 38px;
+    }
+    .home .content p{
+        font-size: 13px;
+    }
+  
+}
+
+.book{
+    background: #f9f9f9;
+    padding: 50px;
+}
+.main-text h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+.main-text h1 span{
+    color: #ffa500;
+}
+.book .card{
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book .row{
+    margin-top: 30px;
+}
+.book form input{
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book form textarea{
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 200px;
+}
+.book .submit{
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background: #ffa500;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.book .submit:hover{
+    width: 170px;
+}
+@media (max-width:765px){
+    .book{
+        padding: 0;
+    }
+    .main-text h1{
+        padding: 20px;
+    }
+   
+}
+
+.main-txt h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+.main-txt h1 span{
+    color: #ffa500;
+}
+.packages .card{
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+.packages .card img{
+    border-radius: 5px;
+}
+.packages .card .card-body{
+    background: transparent;
+}
+.packages .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.packages .card .card-body p{
+    font-size: 15px;
+}
+.checked{
+    color: #ffa500;
+}
+.star i{
+    font-size: 15px;
+}
+.packages .card .card-body h6{
+    font-size: 20px;
+}
+.packages .card .card-body a{
+    padding: 10px;
+    text-decoration: none;
+    background: #ffa500;
+    color: white;
+    border-radius: 5px;
+}
+
+ul{
+  list-style: none;
+
+}
+ul li{
+  display: inline-block;
+  position: relative;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+}
+ul li a{
+  display: block;
+  padding: 20px 25px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 15px;
+  
+}
+ul li ul.g li {
+  display: block;
+  
+}
+ul li ul.g {
+  width: 100%;
+  position: absolute;
+  display: none;
+  background: #eab95f;
+  text-align: center;
+}
+ul li a:hover{
+  background: #ffa500;
+}
+ul li:hover ul.g {
+  display: block;
+}
+
+
+
+.services{
+    background: #f9f9f9;
+    margin-top: 50px;
+}
+.services .card{
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    border: none;
+    cursor: pointer;
+}
+.services .card i{
+    font-size: 80px;
+    text-align: center;
+    color: #ffa500;
+    margin-top: 20px;
+}
+.services .card .card-body h3{
+    font-weight: 600;
+}
+.services .card .card-body{
+    text-align: center;
+}
+
+.gallary{
+    margin-top: 50px;
+}
+.gallary .card{
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    cursor: pointer;
+}
+.gallary .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.gallary .card img:hover{
+    transform: scale(1.1);
+}
+
+.about{
+    padding: 50px;
+    margin-top: 50px;
+    background: #f9f9f9;
+}
+.about .card{
+    border-radius: 10px;
+}
+.about .card img{
+    border-radius: 10px;
+}
+.about h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.about p{
+    font-weight: 500;
+}
+#about-btn{
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: #ffa500;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#about-btn:hover{
+    width: 170px;
+}
+@media (max-width:765px){
+    .about{
+        padding: 0;
+    }
+}
+
+.card i:hover{
+	transform: scale(1.1);
+}
+.card card-body:hover{
+  transform: scale(1.1);
+}
+
+
+
+#footer{
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    background: #f9f9f9;
+}
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+}
+#footer h1 span{
+    color: #ffa500;
+}
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-links i:hover{
+    background: #ffa500;
+}
+</style>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.E-store-logo {
+  width: 50px;
+  height: 50px;
+}
+
+#navItem1 {
+  color: #323f4b;
+  font-family: "Roboto";
+}
+
+#navItem2 {
+  color: #323f4b;
+  font-family: "Roboto";
+}
+
+#navItem3 {
+  color: #323f4b;
+  font-family: "Roboto";
+}
+
+#navItem4 {
+  color: #323f4b;
+  font-family: "Roboto";
+}
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.user-logo {
+  width: 100px;
+  height: 90px;
+  margin-left: 180px;
+}
+
+.site-name-heading {
+  color: black;
+  font-family: "Roboto";
+}
+
+.cart {
+  position: relative;
+  background-color: #24a0ed;
+  color: #212529;
+  font-size: 30px;
+  padding: 5px;
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+.cartAmount {
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  font-size: 16px;
+  background-color: red;
+  color: white;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.banner-section-bg-container {
+  background-image: url("https://res.cloudinary.com/ddtzx1ohw/image/upload/v1679483272/Ajapro/E-commerce/b9382ff17e_dbpdmo.jpg");
+  height: 100vh;
+  background-size: cover;
+}
+
+.banner-heading {
+  color: white;
+  font-family: "Roboto";
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.banner-caption {
+  color: #f5f7fa;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: Bold;
+}
+
+.product-card-title {
+  color: #323f4b;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 24px;
+}
+
+i {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.item-price {
+  font-family: "Roboto";
+  font-size: 24px;
+}
+
+.add-cart-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.cart-button {
+  color: white;
+  background-color: #24a0ed;
+  border-radius: 8px;
+  border: none;
+}
+
+.custom-button {
+  color: white;
+  background-color: #d0b200;
+  width: 130px;
+  height: 45px;
+  border-width: 0;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.custom-outline-button {
+  color: #d0b200;
+  background-color: transparent;
+  width: 130px;
+  height: 45px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d0b200;
+  border-radius: 8px;
+}
+
+.offers {
+  color: #323f4b;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.menu-section-heading {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 28px;
+  color: #183b56;
+}
+
+.explore-menu-section {
+  background-color: white;
+}
+
+.menu-item-image {
+  border-radius: 16px;
+}
+
+.menu-card-title {
+  color: #323f4b;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 24px;
+}
+
+.menu-item-link {
+  color: #d0b200;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.menu-item-card {
+  border-radius: 16px;
+}
+
+.delivery-and-payment-section {
+  background-color: white;
+}
+
+.delivery-and-payment-section-img {
+  width: 270px;
+}
+
+.delivery-and-payment-section-heading {
+  color: #183b56;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.delivery-and-payment-section-description {
+  color: #5a7184;
+  font-family: "Roboto";
+  font-size: 16px;
+}
+
+.payment-card-img {
+  width: 50px;
+  height: 50px;
+  margin-right: 28px;
+}
+
+.custom-button {
+  color: white;
+  background-color: #d0b200;
+  width: 130px;
+  height: 45px;
+  border-width: 0;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.follow-us-section {
+  background-color: white;
+}
+
+.follow-us-section-heading {
+  text-align: center;
+  color: #183b56;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.follow-us-icon-container {
+  background-color: #faf7e8;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  margin: 15px;
+  padding-top: 22px;
+  padding-bottom: 14px;
+  padding-right: 16px;
+  padding-left: 22px;
+}
+
+.E-store-logo-footer {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+}
+
+.icon {
+  color: #d0b200;
+  font-size: 36px;
+}
+
+.footer-section {
+  background-color: #0d2436;
+}
+#clock {
+    font-size: em;
+  }
+.footer-section-mail-id {
+  color: #959ead;
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.footer-section-address {
+  color: #959ead;
+  font-family: "Roboto";
+  font-size: 14px;
+}
+
+.shopping-cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 12px;
+}
+
+.cart-product-image {
+  width: 160px;
+  height: 120px;
+  border-radius: 2px;
+  margin: 24px;
+}
+
+.cart-product-details-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  background-image: url(../../images/homeImg1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.cart-item-container {
+  border: 2px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  margin: 20px;
+  width: 100%;
+}
+
+.bi-plus-lg {
+  color: green;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 4px;
+}
+
+.bi-dash-lg {
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 4px;
+}
+
+.quantity {
+  color: black;
+  font-size: 20px;
+  margin: 4px;
+}
+
+.cart-product-name {
+  font-family: "Roboto";
+  font-weight: 100;
+  color: black;
+  margin-top: 20px;
+}
+
+.cart-item-price {
+  color: black;
+  font-family: "Roboto";
+  font-weight: bold;
+}
+
+.bi-x-lg {
+  color: red;
+  font-size: 18px;
+  margin: 8px;
+}
+
+.cart-total-container {
+  background-color: white;
+  min-width: 310px;
+  height: 350px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 8px;
+  margin: 36px;
+}
+
+.cart-summary-heading {
+  font-family: "Roboto";
+  margin-top: 8px;
+}
+
+.order-eligibility {
+  font-family: "Roboto";
+  font-weight: 200;
+}
+
+.cart-amount {
+  font-family: "Roboto";
+  font-weight: bold;
+}
+    #dex{
+  float: right;
+      text-decoration: none;
+      padding: 12px;
+      color: rgb(50, 50, 50);
+      background-color: #ffa500;
+  margin: 12px;
+  
+    }
+    #btn_pre{
+  float: right;
+  margin: 12px;
+  border: none;
+  cursor: pointer;
+      padding: 12px;
+      color: rgb(41, 40, 40);
+      background-color:  #ffa500;
+    }
+ 
+    
+    .container {
+      display: flex;
+      height: 70vh;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .container_div {
+      background-color: #a5aaab;
+      padding: 4rem;
+      border-radius: 20px;
+      box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+  
+    
+
+
+    button {
+      border: none;
+      padding: 12px;
+      background-color: #ffa500;
+      color: #ffffff;
+      font-size: 1.2rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  
+    button:hover {
+      background-color: #b27216;
+    }</style>
+    <title>Profile</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    /> <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" href="pp.jpg">
+  </head>
+  <body>
+    
+
+ <nav class="navbar navbar-expand-lg" id="navbar" style=" margin-top: -60vh;">
+  <div class="container">
+    <a class="navbar-brand" href="pag3.html" id="logo" style="margin-top: 60vh;"><span>T</span>ravel<span>&#9992;</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" style=" margin-top: 60vh;">
+      <span><i class="fa-solid fa-bars"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">  
+      </ul>
+
+      <a id="dex"  href="pag1.html" style="margin-top: 61vh;">retour</a> 
+
+        </li>
+        <div id="clock" style="margin-top: 61vh;"></div>
+        </form>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
+
+    
+<div class="container">
+  <div class="container_div">
+    <h5 style="color: #b27216;">Personal Information:</h5>
+    <p id="nom"></p>
+    <p id="email"></p>
+    <p id="mdp"></p>
+
+    <button id="mdf">Edit Info</button>
+  </div>
+</div>
+
+
+
+ <footer id="footer">
+  <h1><span>T</span>ravel</h1>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus fugiat, ipsa quos nulla qui alias.</p>
+  <div class="social-links">
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-youtube"></i>
+    <i class="fa-brands fa-pinterest-p"></i>
+  </div>
+  <div class="credit">
+    <p>Call us: </p><h2>Laloui<span>Abdelbari</span></h2>
+    <p>GTR-L2-2023.2024-MT:222231649903</p>
+    <p>Algeria</p>
+        <p>Phone:0556 75 31 82</p>
+        <a href="mailto:bari.2004uae@gmail.com" class="footer-link">bari.2004uae@gmail.com</a>   
+         
+  </div>
+  <div class="copyright">
+    <p>&copy;Copyright SA Coding. All Rights Reserved</p>
+    <p>2024</p>
+  </div>
+</footer>
+  
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+  <script>const options = {
+    bottom: '64px', // default: '32px'
+    right: 'unset', // default: '32px'
+    left: '32px',// default: 'unset'
+    time: '0.5s',// default: '0.3s'
+    mixColor: '#fff',// default: '#fff'
+    backgroundColor: '#fff',  // default: '#fff'
+    buttonColorDark: '#100f2c',  // default: '#100f2c'
+    buttonColorLight: '#fff',// default: '#fff'
+    saveInCookies: false , // default: true,
+    label: '🌓' ,// default: ''
+  }
+  const darkmode = new Darkmode(options);
+  
+  darkmode.showWidget();
+  
+  </script>
+      
+
+    <script>
+      let tempo = JSON.parse(localStorage.getItem("tempo"));
+      let accounts = JSON.parse(localStorage.getItem("accounts")) || [];
+
+      let nom = document.getElementById("nom");
+      let email = document.getElementById("email");
+      let mdp = document.getElementById("mdp");
+      const mdf = document.getElementById("mdf");
+
+      nom.innerHTML = `Nom : ${tempo.nom_complet}`;
+      email.innerHTML = `Email : ${tempo.email}`;
+      mdp.innerHTML = `Password : ${tempo.password}`;
+
+      mdf.addEventListener("click", function (e) {
+        alert("veuillez rempire tout les champs");
+        e.preventDefault();
+        let nv_nom = prompt("donner le nv nom complet");
+        let nv_email = prompt("donner le nv email");
+        let nv_mdp = prompt("donner le nv mdp");
+        tempo.nom_complet = nv_nom;
+        tempo.email = nv_email;
+        tempo.password = nv_mdp;
+
+        localStorage.setItem("tempo", JSON.stringify(tempo));
+        accounts.forEach((acc, i) => {
+          accounts[i] = tempo;
+          localStorage.setItem("accounts", JSON.stringify(accounts));
+        });
+        location.reload();
+      });
+    </script>
+      <script>
+        function updateClock() {
+          const now = new Date();
+          const hours = now.getHours().toString().padStart(2, '0');
+          const minutes = now.getMinutes().toString().padStart(2, '0');
+          const seconds = now.getSeconds().toString().padStart(2, '0');
+          const timeString = `${hours}:${minutes}:${seconds}`;
+          document.getElementById('clock').textContent = timeString;
+        }
+
+        setInterval(updateClock, 1000);
+    
+       
+        updateClock();
+      </script>
+      
+  </body>
+</html>
